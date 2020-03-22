@@ -538,7 +538,7 @@ module.exports.ServiceProvider =
       @alt_certs = [].concat(@alt_certs or [])
 
       @shared_options = _(options).pick(
-        "force_authn", "auth_context", "nameid_format", "sign_get_request", "allow_unencrypted_assertion", "audience", "notbefore_skew")
+        "force_authn", "auth_context", "nameid_format", "sign_get_request", "allow_unencrypted_assertion", "ignore_signature", "audience", "notbefore_skew")
 
     # Returns:
     #   Redirect URL at which a user can login
